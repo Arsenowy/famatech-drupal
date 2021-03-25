@@ -29,6 +29,7 @@
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/ds": "^3.12",
+        "drupal/fontawesome": "^2.18",
         "drupal/image_field_repair": "^2.0@beta",
         "drupal/slick": "^2.2",
         "drupal/slick_views": "^2.3",
