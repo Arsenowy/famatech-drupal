@@ -1,0 +1,23 @@
+/* NAVBAR TOP */
+.navbar__top {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.navbar-brand img {
+  height: 50px;
+  width: 200px;
+}
+
+/* NAVBAR BOTTOM */
+.navbar__bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.navbar__bottom li.nav-item {
+  margin: 0 30px;
+}

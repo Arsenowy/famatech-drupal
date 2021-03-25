@@ -1,0 +1,11 @@
+blog_posts_2col:
+  label: Blog_2col+button
+  category: Custom
+  template: col2-blog-posts
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom

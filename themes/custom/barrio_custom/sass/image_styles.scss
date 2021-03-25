@@ -1,0 +1,12 @@
+.image-style-wide-100 {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    &__filter{
+        &--dark {
+            filter: brightness(0.8);
+        }
+    }
+}

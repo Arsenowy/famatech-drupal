@@ -1,0 +1,14 @@
+body {
+  font-family: Barlow;
+}
+
+h2 {
+  letter-spacing: -0.8px;
+}
+
+h1,
+h2 {
+  &.blog {
+    font-size: 4rem;
+  }
+}
