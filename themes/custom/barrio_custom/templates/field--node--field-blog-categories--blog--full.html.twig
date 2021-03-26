@@ -52,8 +52,17 @@
   ]
 %}
 
+{%
+  set absolute_floating = [
+    'position-absolute',
+    'blog__banner--absolute-el',
+    'blog__banner--cat',
+    'content'
+  ]
+%}
+
   {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field__items', 'd-flex') }}>
+    <div{{ attributes.addClass(classes, 'field__items', 'd-flex', absolute_floating) }}>
       {% for item in items %}
         <div{{ item.attributes.addClass('field__item', 'mr-3', 'text-white') }}>{{ item.content }}</div>
       {% endfor %}

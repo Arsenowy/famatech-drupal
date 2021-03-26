@@ -9,7 +9,7 @@
       top: 10%;
 
       & a {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: 300;
         margin: 1rem;
@@ -28,24 +28,40 @@
 
     &--date {
       top: 85%;
-
-      //date on a fullpost banner
-      & > .blog__item time {
-        font-size: 1.6rem;
-        color: #fff;
-        font-weight: 200;
-      }
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 200;
     }
   }
 
-  &__element {
-    padding-bottom: 1.5rem;
-    margin: 1.5rem 0;
-    border-bottom: 2px #eee solid;
+  &__shortcut {
+    &--element {
+      padding-bottom: 1.5rem;
+      margin: 1.5rem 0;
+      border-bottom: 2px #eee solid;
+    }
+    &--buttons {
+      width: calc(100% - 1.5rem);
+      text-align: right;
+    }
   }
-  &__buttons {
-    width: calc(100% - 1.5rem);
-    text-align: right;
+
+  &__teaser {
+    &--cat {
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+
+    &--title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+    }
+
+    &--body {
+      font-weight: 300;
+      font-size: 1rem;
+    }
   }
 
   &__item {

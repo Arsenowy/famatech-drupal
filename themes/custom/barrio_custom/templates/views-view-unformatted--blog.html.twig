@@ -21,7 +21,7 @@
 {% for row in rows %}
   {%
     set row_classes = [
-      default_row_class ? 'views-row', 'blog__element',
+      default_row_class ? 'views-row', 'blog__shortcut--element',
     ]
   %}
   <div{{ row.attributes.addClass(row_classes) }}>

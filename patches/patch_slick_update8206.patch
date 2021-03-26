@@ -1,0 +1,11 @@
+diff --git a/slick.install b/slick.install
+index 7683286..c66116d 100644
+--- a/slick.install
++++ b/slick.install
+@@ -74,3 +74,6 @@ function slick_update_8204() {
+ function slick_update_8205() {
+   // Do nothing to clear cache.
+ }
++function slick_update_8206() {
++  Drupal::messenger()->addMessage('Hi update!');
++}

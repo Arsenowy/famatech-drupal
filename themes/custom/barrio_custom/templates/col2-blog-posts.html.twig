@@ -1,0 +1,23 @@
+{#
+/**
+** blog posts in 2 columns + button on bottom right
+ */
+#}
+{% if content %}
+	<div{{attributes.addClass('row')}}>
+
+		<div{{region_attributes.first.addClass('col-sm-6')}}>
+			{{ content.first }}
+		</div>
+
+		<div{{region_attributes.second.addClass('col-sm-6')}}>
+			{{ content.second }}
+		</div>
+
+		{# .blog_buttons class mains that buttons are floating right #}
+		<div {{ region_attributes.bottom.addClass('region--bottom', 'blog__shortcut--buttons') }}>
+			{{ content.bottom}}
+		</div>
+
+	</div>
+{% endif %}

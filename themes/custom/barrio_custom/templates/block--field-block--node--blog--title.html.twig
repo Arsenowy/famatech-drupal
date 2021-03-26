@@ -37,21 +37,13 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-  ]
-%}
-
-{%
-  set absolute_floating = [
-    'position-absolute',
-    'blog__banner--absolute-el',
-    'blog__banner--title',
-    'content'
+    'my-3'
   ]
 %}
 
 <div{{attributes.addClass(classes)}}>
 	{% block content %}
-		<div{{content_attributes.addClass(absolute_floating)}}>
+		<div{{content_attributes}}>
 			{{ content }}
 		</div>
 	{% endblock %}
