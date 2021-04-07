@@ -1,14 +1,26 @@
-.image-style-wide-100 {
+.image-style {
+  &-wide-100 {
     width: 100%;
     height: auto;
     max-height: 500px;
-    object-fit: cover
+    object-fit: cover;
+  }
+  &-large {
+    width: 100%;
+    height: auto;
+
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      height: auto;
+    }
+
+  }
 }
 
 .img {
-    &__filter{
-        &--dark {
-            filter: brightness(0.8);
-        }
+  &__filter {
+    &--dark {
+      filter: brightness(0.75);
     }
+  }
 }

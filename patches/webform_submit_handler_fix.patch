@@ -1,0 +1,15 @@
+diff --git a/src/Plugin/DevelGenerate/WebformSubmissionDevelGenerate.php b/src/Plugin/DevelGenerate/WebformSubmissionDevelGenerate.php
+index 1eb2c5b6c..fe42a0151 100644
+--- a/src/Plugin/DevelGenerate/WebformSubmissionDevelGenerate.php
++++ b/src/Plugin/DevelGenerate/WebformSubmissionDevelGenerate.php
+@@ -32,8 +32,8 @@ class WebformSubmissionDevelGenerate extends DevelGenerateBase implements Contai
+   /**
+    * {@inheritdoc}
+    */
+-  public function validateDrushParams($args) {
+-    return $this->_validateDrushParams($args);
++  public function validateDrushParams(array $args, array $options = []) {
++    return $this->_validateDrushParams($args, $options);
+   }
+
+ }

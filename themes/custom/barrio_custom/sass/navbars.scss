@@ -1,10 +1,6 @@
 /* NAVBAR TOP */
 .navbar {
-  &__top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
 }
 //navbar
 .region-primary-menu {
@@ -25,5 +21,35 @@
   & .is-active {
     font-weight: 600;
     border-bottom: solid 1px;
+  }
+}
+
+.navbar {
+  margin: 0;
+  &__main {
+    background-color: inherit;
+
+    ul.we-mega-menu-ul &--el {
+      background-color: #000;
+      color: #fff;
+
+      // select all of menu links
+      &.active > a,
+      & > a  {
+        font-size: 1rem;
+        text-transform: none;
+        font-weight: 400;
+        font-family: Barlow;
+        text-decoration: none;
+        background-color: inherit;
+        color: inherit;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+
   }
 }
