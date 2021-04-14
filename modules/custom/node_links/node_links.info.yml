@@ -1,5 +1,0 @@
-name: 'Node links'
-type: module
-description: 'My Awesome Module'
-core_version_requirement: 8.x || 9.x
-package: 'Custom'

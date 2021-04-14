@@ -31,12 +31,15 @@
         "drupal/ds": "^3.12",
         "drupal/fontawesome": "^2.18",
         "drupal/image_field_repair": "^2.0@beta",
+        "drupal/imce": "^2.3",
+        "drupal/metatag": "^1.16",
         "drupal/recreate_block_content": "^2.1",
         "drupal/responsive_menu": "^4.4",
         "drupal/slick": "^2.2",
         "drupal/slick_views": "^2.3",
         "drupal/smtp": "^1.0",
         "drupal/svg_image": "^1.14",
+        "drupal/swiftmailer": "^2.0",
         "drupal/token": "^1.9",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.0",
@@ -55,7 +58,6 @@
     },
     "extra": {
         "patches": {
-            "enable-patching": true,
             "drupal/core": {
                 "patch images": "https://www.drupal.org/files/issues/2020-11-06/2957368-14.patch"
             },
@@ -63,7 +65,7 @@
                 "fix handling": "patches/webform_submit_handler_fix.patch"
             },
             "drupal/we_megamenu": {
-                "md breakpoint": "patches/menu_breakpoints.patch"
+                "breakpoint lg->md": "https://www.drupal.org/files/issues/2021-01-11/changed_breakpoint_for_mobile_devices-3090922-8.patch"
             }
         },
         "drupal-scaffold": {

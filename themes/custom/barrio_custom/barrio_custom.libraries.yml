@@ -2,6 +2,7 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/btn.js: {}
   dependencies:
     - core/jquery
   css:

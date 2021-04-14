@@ -1,7 +1,3 @@
-/* NAVBAR TOP */
-.navbar {
-
-}
 //navbar
 .region-primary-menu {
   margin: 0 auto;
@@ -26,16 +22,76 @@
 
 .navbar {
   margin: 0;
-  &__main {
-    background-color: inherit;
 
-    ul.we-mega-menu-ul &--el {
+  &::before,
+  &::after {
+    @include media-breakpoint-down(md) {
+      content: none;
+    }
+  }
+
+  &__top {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  &__main {
+    background-color: #000;
+
+    &.mobile-main-menu.we-mobile-megamenu-active {
+      @include media-breakpoint-down(md) {
+        background-color: #000;
+        padding-top: 4rem;
+
+        & > .container-fluid {
+          justify-content: flex-end;
+        }
+      }
+    }
+    // mobile close navbar button
+    &--mobileClose {
+      right: 190px;
+      top: 50px;
+      z-index: 9999;
+    }
+
+    &--mobilelist.nav-tabs {
+      @include media-breakpoint-down(md) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    &--logo {
+      display: none;
+      margin: 0 21px;
+      color: #ddd;
+      font-family: Pacifico;
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: all ease 0.5s;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+    }
+
+    & ul.we-mega-menu-ul &--el {
       background-color: #000;
       color: #fff;
 
       // select all of menu links
       &.active > a,
-      & > a  {
+      & > a {
         font-size: 1rem;
         text-transform: none;
         font-weight: 400;
@@ -43,13 +99,33 @@
         text-decoration: none;
         background-color: inherit;
         color: inherit;
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
+        padding: 0.2rem;
+        margin: 0 1rem;
+
         &:hover {
           color: inherit;
         }
+
+        @include media-breakpoint-down(md) {
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          margin: 0.5rem 0;
+          font-weight: 200;
+        }
+
+      }
+      &.active > a {
+        background-color: #000 !important;
+        border-bottom: 1px white solid !important;
       }
     }
-
+  }
+}
+// navbar toggle button
+.region-we-mega-menu {
+  @include media-breakpoint-down(md) {
+    margin: 0;
+    background: inherit;
+    padding: 15px 21px;
   }
 }

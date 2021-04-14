@@ -14,8 +14,8 @@ function style() {
         .pipe(gulp.dest('./themes/custom/barrio_custom/css/'))
         //5 stream changed to all browsers
         //.pipe(browserSync.stream())
-
 }
+
 
 function watch() {
    /*  browserSync.init({

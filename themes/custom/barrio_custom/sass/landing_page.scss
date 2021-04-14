@@ -1,4 +1,5 @@
 .landing-page {
+  position: relative;
   &__banner {
     &--title {
       color: rgb(255, 200, 21);
@@ -15,7 +16,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, 0%);
+      transform: translate(-50%, -50%);
     }
 
     &--img {
@@ -46,7 +47,6 @@
       @include media-breakpoint-down(md) {
         flex-direction: column-reverse;
       }
-
     }
 
     &--single {
@@ -71,6 +71,77 @@
     }
   }
 
+  &__contact {
+    padding: 2rem;
+    background-color: #222;
+
+    &--header {
+      font-size: 2rem;
+      text-align: center;
+      color: #fff;
+      margin: 1.5rem 0;
+      font-weight: 500;
+    }
+
+    &--col {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    // modify webform inside landing-page__contact
+    .form-control,
+    .form-select {
+      background-color: lighten($color:#261d18, $amount: 2.5);
+      color: #fff;
+      box-shadow: none;
+      transition: ease 0.3s all;
+
+      &:focus {
+        box-shadow: 0 0 1px 1px white;
+        border-color: white;
+      }
+    }
+
+    .webform-element-description {
+      color: #bbb;
+    }
+    label {
+      color: #ddd;
+    }
+    button.btn.btn-primary {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-bottom: 2px solid white;
+
+      &:focus,
+      &:active,
+      &:not(:disabled):not(.disabled):active:focus {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    /*Change text in autofill textbox*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      transition: background-color 9999s ease-in-out;
+      -webkit-text-fill-color: white;
+    }
+  }
+
   //button
   &__cta {
     font-weight: 700;
@@ -78,4 +149,8 @@
     padding: 4px;
     border-bottom: 2px solid;
   }
+}
+
+.landing-page__webform {
+  background-color: firebrick;
 }
