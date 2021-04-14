@@ -38,6 +38,7 @@
 
   &__main {
     background-color: #000;
+    border-radius: 0;
 
     &.mobile-main-menu.we-mobile-megamenu-active {
       @include media-breakpoint-down(md) {
